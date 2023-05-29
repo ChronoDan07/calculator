@@ -30,6 +30,7 @@ let startOn = false;
 let index = 0;
 let tempRes = 0;
 let results;
+let resultOn = false;
 
 
 
@@ -68,7 +69,8 @@ calcButtons.forEach(button => {
 
 // Number Buttons
 one.addEventListener('mousedown', () => {
-     if(mainResult.textContent == "0"){
+   if (!resultOn){ 
+    if(mainResult.textContent == "0"){
         mainResult.textContent ="";
     }
      if(numberOn){
@@ -78,9 +80,11 @@ one.addEventListener('mousedown', () => {
      }
     operOn = true;
     mainResult.textContent +=1;
+  }
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 1" || event.key === "1") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }
@@ -92,10 +96,12 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=1;
     }
+  }
   });
 
 
 two.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -105,9 +111,11 @@ two.addEventListener('mousedown', () => {
  } 
    operOn = true;
    mainResult.textContent +=2;
+}
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 2" || event.key === "2") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -117,9 +125,11 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=2;
     }
+  }
   });
 
 three.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -129,9 +139,11 @@ three.addEventListener('mousedown', () => {
  }  
    operOn = true;
    mainResult.textContent +=3;  
+}
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 3" || event.key === "3") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -141,9 +153,11 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=3;
     }
+  }
   });
 
 four.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -152,9 +166,11 @@ four.addEventListener('mousedown', () => {
  }
    operOn = true;
    mainResult.textContent +=4; 
+}
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 4" || event.key === "4") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -165,9 +181,11 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=4;
     }
+  }
   });
 
 five.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -177,9 +195,11 @@ five.addEventListener('mousedown', () => {
  }
    operOn = true;
    mainResult.textContent +=5;
+}
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 5" || event.key === "5") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -189,9 +209,11 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=5;
     }
+  }
   });
 
 six.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -200,10 +222,12 @@ six.addEventListener('mousedown', () => {
   
  }
    operOn = true;
-   mainResult.textContent +=6;  
+   mainResult.textContent +=6; 
+} 
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 6" || event.key === "6") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -214,9 +238,11 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=6;
     }
+  }
   });
 
 seven.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -226,9 +252,11 @@ seven.addEventListener('mousedown', () => {
  }
    operOn = true;
    mainResult.textContent +=7;
+}
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 7" || event.key === "7") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -239,9 +267,11 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=7;
     }
+  }
   });
 
 eight.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -251,9 +281,11 @@ eight.addEventListener('mousedown', () => {
  }
    operOn = true;
    mainResult.textContent +=8;
+}
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 8" || event.key === "8") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -264,8 +296,10 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=8;
     }
+  }
   });
 nine.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        mainResult.textContent ="";
    }if(numberOn){
@@ -275,10 +309,12 @@ nine.addEventListener('mousedown', () => {
  }
    operOn = true;
    mainResult.textContent +=9;
+}
 });
 
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 9" || event.key === "9") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             mainResult.textContent ="";
         }if(numberOn){
@@ -288,9 +324,11 @@ document.addEventListener("keydown", (event) => {
         operOn = true;
         mainResult.textContent +=9;
     }
+  }
   });
 
 zero.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     if(mainResult.textContent == "0"){
        return;
    }else{
@@ -302,9 +340,11 @@ zero.addEventListener('mousedown', () => {
     operOn = true;
     mainResult.textContent +=0;
    }
+  }
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "numpad 0" || event.key === "0") {
+      if (!resultOn){ 
         if(mainResult.textContent == "0"){
             return;
         }else{
@@ -317,9 +357,11 @@ document.addEventListener("keydown", (event) => {
          mainResult.textContent +=0;
         }  
     }
+  }
   });
 // Delete Button
 deleter.addEventListener('mousedown', () => {
+  if (!resultOn){ 
     let mr = mainResult.textContent
     if (mr.length > 1){
     mr=mr.slice(0,-1);
@@ -327,9 +369,11 @@ deleter.addEventListener('mousedown', () => {
         mr= "0";
     }
     mainResult.textContent = mr; 
+  }
 });
 document.addEventListener("keydown", (event) => {
     if (event.key === "Backspace") {
+      if (!resultOn){ 
         let mr = mainResult.textContent
         if (mr.length > 1){
         mr=mr.slice(0,-1);
@@ -338,6 +382,7 @@ document.addEventListener("keydown", (event) => {
         }
         mainResult.textContent = mr; 
         }
+      }
   });
 
 // Clear Button
@@ -347,6 +392,7 @@ clear.addEventListener('mousedown', () => {
     operOn=true;
     numberOn = true;
     startOn = false;
+    resultOn = false;
     index = 0;
 });
 document.addEventListener("keydown", (event) => {
@@ -355,71 +401,84 @@ document.addEventListener("keydown", (event) => {
       secondResult.textContent = "";
       operOn=true;
       numberOn = true;
+      resultOn = false;
       index = 0;
     }
   });
 
 // Point Button
 point.addEventListener('mousedown', () => {
+  if (!resultOn){ 
   if(mainResult.textContent.includes(".")){
     return
   }else if (!mainResult.textContent.includes(".")){
       mainResult.textContent += ".";
   }
+}
 });
 
 document.addEventListener("keydown", (event) => {
     if (event.key === ".") {
+      if (!resultOn){ 
         if(mainResult.textContent.includes(".")){
         }else if (!mainResult.textContent.includes(".")){
             mainResult.textContent += ".";
         }
     }
+  }
   });
 
   //E button
 
   euler.addEventListener('mousedown', () =>{
+    if (!resultOn){ 
     mainResult.textContent = "2.7182818284590";
     operOn = true;
     numberOn = true;
-    
+    }
   });
   document.addEventListener("keydown", (event) => {
     if (event.key === "e") {
+      if (!resultOn){ 
       mainResult.textContent = "2.7182818284590";
       operOn = true;
       numberOn = true;
-      
+      }
     }
   });
 // Pi button
   pi.addEventListener('mousedown', () =>{
+    if (!resultOn){ 
     mainResult.textContent = "3.1415926535897";
     operOn = true;
     numberOn = true;
-    
+    }
   });
   document.addEventListener("keydown", (event) => {
     if (event.key === "p") {
+      if (!resultOn){ 
       mainResult.textContent = "3.1415926535897";
       operOn = true;
       numberOn = true;
+      }
     }
   });
 // Result button
     result.addEventListener('mousedown', () => {
-        
+      if (!resultOn){ 
             operate();
+            resultOn = true;
+      }
           
-          console.log("THE:",results);
+          
     });
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === "numpad enter") {
-            if (!operOn) {
-                operate();
-              }
+          if (!resultOn){ 
+           operate();
+           resultOn = false;
+          }
         }
     });
   if(secondResult.textContent ==="0"){
@@ -469,11 +528,18 @@ document.addEventListener("keydown", (event) => {
         if(index <= 0){
           results = parseFloat(secondResult.textContent.slice(0,len-1)) / parseFloat(mainResult.textContent);  
           tempRes = results;
+          if(mainResult.textContent == 0){
+            resultOn = true;
+            return mainResult.textContent = "Division by zero";
+          }
           mainResult.textContent = results;
         }else {
           tempRes = results;
           results = parseFloat(tempRes) / parseFloat(mainResult.textContent);
-
+          if(mainResult.textContent == 0){
+            resultOn = true;
+            return mainResult.textContent = "Division by zero";
+          }
           mainResult.textContent = results;
         }
       }   
@@ -506,7 +572,12 @@ document.addEventListener("keydown", (event) => {
       mainResult.textContent = parseFloat(results) * parseFloat(mainResult.textContent);
     }
     else if(secondResult.textContent[lengt-1] ==="÷"){
+      if(mainResult.textContent == 0){
+        resultOn = true;
+        return mainResult.textContent = "Division by zero";
+      }
       mainResult.textContent = parseFloat(results) / parseFloat(mainResult.textContent);
+      
     }
     secondResult.textContent = secondResult.textContent + val + "=";
   }else{
@@ -520,7 +591,12 @@ document.addEventListener("keydown", (event) => {
       mainResult.textContent = parseFloat(secondResult.textContent.slice(0,-1)) * parseFloat(mainResult.textContent);
     }
     else if(secondResult.textContent[lengt-1] ==="÷"){
+      if(mainResult.textContent == 0){
+        resultOn = true;
+        return mainResult.textContent = "Division by zero";
+      }
       mainResult.textContent = parseFloat(secondResult.textContent.slice(0,-1)) / parseFloat(mainResult.textContent);
+      
     }
     secondResult.textContent = secondResult.textContent + val2 + "=";
   }
@@ -529,7 +605,7 @@ document.addEventListener("keydown", (event) => {
 
 // Addition button
     addition.addEventListener('mousedown', () => {
-    
+      if (!resultOn){ 
       if(operOn){
         
           secondResult.textContent += mainResult.textContent + "+";
@@ -551,12 +627,13 @@ document.addEventListener("keydown", (event) => {
       startOn = true
       
       replace()
-      
+    }
     });
 
     document.addEventListener("keydown", (event) => {
+
         if (event.key === "+") {
-          
+          if (!resultOn){   
           if(operOn){
         
             secondResult.textContent += mainResult.textContent + "+";
@@ -573,12 +650,13 @@ document.addEventListener("keydown", (event) => {
         sign="+";
         startOn = true
         replace()
+      }
         }
       });
 // Subtraction button
 
     subtraction.addEventListener('mousedown', () => {
-      
+      if (!resultOn){ 
       if(operOn){
         
         secondResult.textContent += mainResult.textContent + "-";
@@ -596,11 +674,13 @@ document.addEventListener("keydown", (event) => {
     sign="-";
     startOn = true
     replace()
+  }
     });
 
     document.addEventListener("keydown", (event) => {
+
         if (event.key === "-") {
-          
+          if (!resultOn){ 
           if(operOn){
         
             secondResult.textContent += mainResult.textContent + "-";
@@ -619,11 +699,12 @@ document.addEventListener("keydown", (event) => {
         startOn = true
         replace()
         }
+      }
       });
 // Multiplication button
 
     multiplication.addEventListener('mousedown', () => {
-      
+      if (!resultOn){ 
       if(operOn){
         
         secondResult.textContent += mainResult.textContent + "×";
@@ -641,11 +722,13 @@ document.addEventListener("keydown", (event) => {
     sign="×";
     startOn = true
     replace()
+  }
     });
 
     document.addEventListener("keydown", (event) => {
+
         if (event.key === "*") {
-          
+          if (!resultOn){ 
           if(operOn){
             secondResult.textContent += mainResult.textContent + "×";
             if(secondResult.textContent === ""){
@@ -663,11 +746,12 @@ document.addEventListener("keydown", (event) => {
         startOn = true
         replace()
         }
+      }
       });
 // Division button
 
     division.addEventListener('mousedown', () => {
-      
+      if (!resultOn){ 
       if(operOn){
         
         secondResult.textContent += mainResult.textContent + "÷";
@@ -685,11 +769,13 @@ document.addEventListener("keydown", (event) => {
     sign="÷"; 
     startOn = true
     replace()
+  }
     });
 
     document.addEventListener("keydown", (event) => {
+
         if (event.key === "/") {
-          
+          if (!resultOn){  
           if(operOn){
         
             secondResult.textContent += mainResult.textContent + "÷";
@@ -708,6 +794,7 @@ document.addEventListener("keydown", (event) => {
         startOn = true
         replace()
         }
+      }
       });
 
       
