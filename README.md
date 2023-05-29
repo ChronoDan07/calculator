@@ -1,2 +1,2 @@
 # calculator
-This project will contain a functional in-browser calculator.
+This project contains a functional in-browser calculator with basic operations and a nice design to it.
